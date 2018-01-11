@@ -1,0 +1,8 @@
+title: Paupuerta.github.io
+description: web personal
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-time-machine
+
+gems:
+  - jekyll-mentions
