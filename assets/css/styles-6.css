@@ -1,0 +1,720 @@
+/*   
+ * Template Name: Orbit - Responsive Resume/CV Template for Developers
+ * Version: 1.0
+ * Author: Xiaoying Riley
+ * Twitter: @3rdwave_themes
+ * License: Creative Commons Attribution 3.0 License
+ * Website: http://themes.3rdwavemedia.com/
+*/
+/* styles-6.css */
+/* ======= Base ======= */
+* {
+  border:0 solid white;
+}
+html {
+box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #545E6C;
+  background: #f5f5f5;
+  /*font-size: 14px;
+  */
+  font-size: 0.8em;
+  padding: 30px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  line-height: 1.42857143;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: #2e4049;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #10171a;
+}
+a:focus {
+  text-decoration: none;
+}
+p {
+  line-height: 1.5;
+  margin: 0 0 10px;
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+
+.skills-diagram {
+  font-weight: bold;
+  text-align: center;
+}
+.skills-diagram > dd {
+  /* Hide inner attributes */
+  display: none;
+}
+.skills-diagram dt {
+  display: inline-block;
+  vertical-align: top;
+  
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+  
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  
+  /* set defaults to skill-2 */
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+}
+
+.skills-diagram dt:hover {
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+/* Support vertical mode */
+.skills-diagram-vertical dt {
+  display: block;
+  /* .25em is an equivalent to inline-block's horizontal whitespace margin */
+  margin: .25em auto;
+}
+
+/* Provide 10 different sizes */
+.skills-diagram .skill-2 {
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  
+  background-color: rgba(201, 155, 129, .3);
+  border-color: rgba(201, 155, 129, 1);
+  color: rgba(201, 155, 129, 1);
+}
+.skills-diagram span {
+  font-size: 0.4vw;
+}
+
+.skills-diagram .skill-3 {
+  vertical-align: middle;
+  
+  width: 3em;
+  height: 3em;
+  line-height: 3em;
+  background-color: rgba(138, 138, 140, .3);
+  border-color: rgba(138, 138, 140, 1);
+  color: rgba(138, 138, 140, 1);
+}
+
+
+.skills-diagram .skill-4 {
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+  
+  background-color: rgba(234, 112, 97, .3);
+  border-color: rgba(234, 112, 97, 1);
+  color: rgba(234, 112, 97, 1);
+}
+.skills-diagram .skill-5 {
+  vertical-align: bottom;
+
+  width: 5em;
+  height: 5em;
+  line-height: 5em;
+  background-color: rgba(109, 182, 173, .3);
+  border-color: rgba(109, 182, 173, 1);
+  color: rgba(109, 182, 173, 1);
+}
+.skills-diagram .skill-6 {
+  vertical-align: top;
+  
+  width: 6em;
+  height: 6em;
+  line-height: 6em;
+  
+  background-color: rgba(195, 192, 100, .3);
+  border-color: rgba(195, 192, 100, 1);
+  color: rgba(195, 192, 100, 1);
+}
+.skills-diagram .skill-7 {
+  width: 7em;
+  height: 7em;
+  line-height: 7em;
+  
+  background-color: rgba(214, 89, 102, .3);
+  border-color: rgba(214, 89, 102, 1);
+  color: rgba(214, 89, 102, 1);
+}
+.skills-diagram .skill-8 {
+  vertical-align: bottom;
+  
+  width: 8em;
+  height: 8em;
+  line-height: 8em;
+  background-color: rgba(46, 138, 75, .3);
+  border-color: rgba(46, 138, 75, 1);
+  color: rgba(46, 138, 75, 1);
+}
+.skills-diagram .skill-9 {
+  width: 11em;
+  height: 11em;
+  line-height: 11em;
+  
+  background-color: rgba(177, 18, 2, .3);
+  border-color: rgba(177, 18, 2, 1);
+  color: rgba(177, 18, 2, 1);
+}
+.skills-diagram .skill-10 {
+  width: 14em;
+  height: 14em;
+  line-height: 14em;
+  background-color: rgba(81, 112, 144, .3);
+  border-color: rgba(81, 112, 144, 1);
+  color: rgba(81, 112, 144, 1);
+}
+
+
+
+
+.wrapper {
+  background: #4B6A78;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.sidebar-wrapper {
+  float: right;
+  background: #4B6A78;
+
+  right: 0;
+  /*width: auto;*/
+  width: 200px;
+  height: 100%;
+  color: #fff;
+  margin-left: 10px;
+}
+.sidebar-wrapper a {
+  color: #fff;
+}
+.sidebar-wrapper .profile-container {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff;
+}
+.sidebar-wrapper .name {
+  font-size: 32px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.sidebar-wrapper .tagline {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.sidebar-wrapper .profile {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  vertical-align: middle;
+}
+.sidebar-wrapper .contact-list {
+  padding-left: 0;
+  list-style: none;
+}
+.sidebar-wrapper .contact-list .fa {
+  margin-right: 5px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.sidebar-wrapper .contact-list li {
+  /* margin-bottom: 15px; */
+}
+.sidebar-wrapper .contact-list li:last-child {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .contact-list .email .fa {
+  font-size: 14px;
+}
+.sidebar-wrapper .container-block {
+  /* padding: 30px; */
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+.sidebar-wrapper .container-block:last-child {
+  /* padding: 30px; */
+  padding-bottom: 10px;
+}
+
+.sidebar-wrapper .container-block-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.sidebar-wrapper .degree {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.sidebar-wrapper .education-container .item {
+  margin-bottom: 15px;
+}
+.sidebar-wrapper .education-container .item:last-child {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .education-container .meta {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+.sidebar-wrapper .education-container .time {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.sidebar-wrapper .languages-container .lang-desc {
+  color: rgba(255, 255, 255, 0.6);
+}
+.sidebar-wrapper .languages-list {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.sidebar-wrapper .languages-list li {
+  /* margin-bottom: 10px; */
+}
+.sidebar-wrapper .languages-list li:last-child {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .interests-list {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.sidebar-wrapper .interests-list li {
+  /* margin-bottom: 10px; */
+}
+.sidebar-wrapper .interests-list li:last-child {
+  margin-bottom: 0;
+}
+.main-wrapper {
+  background: #fff;
+  padding: 60px;
+  padding-right: 5%;
+}
+.main-wrapper .section-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2e4049;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.main-wrapper .section-title .fa {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  display: inline-block;
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #2e4049;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 16px;
+  position: relative;
+  top: -2px;
+}
+.main-wrapper .section-subtitle{
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+.main-wrapper .section {
+  /* page-break-after: auto; */
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.main-wrapper .experiences-section .item {
+  margin-bottom: 30px;
+}
+.main-wrapper .upper-row {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+.main-wrapper .job-title {
+  color: #3F4650;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.main-wrapper .time {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #97AAC3;
+}
+.main-wrapper .company {
+  margin-bottom: 10px;
+  color: #97AAC3;
+}
+.main-wrapper .project-title {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.main-wrapper .projects-section .intro {
+  margin-bottom: 30px;
+}
+.main-wrapper .projects-section .item {
+  margin-bottom: 5px;
+}
+.main-wrapper .projects-section .item:last-child {
+  margin-bottom: 15px;
+}
+
+.skillset .item {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.skillset .level-title {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.skillset .level-bar {
+  height: 12px;
+  background: #f5f5f5 !important;
+}
+.skillset .level-bar-inner {
+  height: 12px;
+  background: #6c92a3 !important;
+}
+
+
+.footer {
+  padding: 30px;
+  padding-top: 60px;
+}
+.footer .copyright {
+  line-height: 1.6;
+  color: #545E6C;
+  font-size: 13px;
+}
+.footer .fa-heart {
+  color: #fb866a;
+}
+
+
+
+
+.timeline {
+  list-style: none;
+  padding-left: 0;
+}
+.timeline > li {
+  margin-bottom: 60px;
+}
+
+/* for Desktop  @media ( min-width : 640px ){*/
+
+  .timeline > li {
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+  }
+  .timeline-date {
+    width: 110px;
+    float: left;
+    margin-top: 20px;
+  }
+  .timeline-content {
+    width: 75%;
+    float: left;
+    border-left: 3px #e5e5d1 solid;
+    padding-left: 2%;
+  }
+  .timeline-content:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #6fc173;
+    position: absolute;
+    left: 106px;
+    top: 24px;
+    border-radius: 100%;
+  }
+
+  .timeline li:first-child .timeline-date {
+    margin-top: 0;
+  }
+
+  .timeline li:first-child .timeline-content:before {
+    content: '';
+    width: 21px;
+    height: 21px;
+    background: #000;
+    position: absolute;
+    left: 101px;
+    top: 0;
+    border-radius: 100%;
+  }
+
+  .timeline li:last-child .timeline-content:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #6fc173;
+    position: absolute;
+    left: 106px;
+    top: 24px;
+    border-radius: 100%;
+  }
+  .timeline li:last-child .timeline-content:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: red;
+    position: absolute;
+    left: 106px;
+    bottom: 0;
+    top: auto;
+    border-radius: 100%;
+  }
+
+  .timeline-content .item .details:empty{
+    height: 1px;
+  }
+ 
+/*} */
+
+
+
+
+
+.skills-soft ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.skills-soft ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-soft ul li {
+    position: relative;
+}
+
+.skills-soft ul li span {
+    top: 40%;
+    position: absolute;
+    display: block;
+    width: 100%;
+    transition-duration: 0.3s;
+}
+
+.skills-soft ul li small {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 52%;
+    transition-duration: 0.3s;
+}
+
+.skills-soft ul li svg {
+  width: 95%;
+  fill: rgba(0, 0, 0, 0);
+  transform: rotate(-90deg);
+}
+.skills-soft ul li svg circle {
+    stroke-width: 1px;
+    stroke: #cdcdcd;
+}
+
+.skills-soft ul li svg .cbar {
+  stroke-width: 3px;
+  stroke: #8d9e78;
+  stroke-linecap: round;
+}
+
+#techlist {
+  padding-left: 0;
+}
+
+.skills {
+  /*max-width: 50%;*/
+  text-align: left;
+}
+.skills li {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.skills i {
+  font-size: 7px;
+}
+.first {
+    color:blue;
+}
+.last {
+    color:red;
+}
+.last i {
+    visibility:hidden;
+}
+
+
+
+/* Large devices (large desktops, 1200px and up) */
+/* Ex-Large devices (large desktops, 1200px and up) */
+@page {
+    /*size: A4 portrait;*/
+    size: 21cm 29.7cm;
+    margin: 0mm 0mm 0mm 0mm; 
+    margin-top: 2cm; 
+  }
+
+@page :first {
+  margin-top: 0cm; /* Top margin on first page 10cm */
+}
+
+@media print {
+  .pagebreak {
+      page-break-before: always !important;
+  }
+
+  .skills-diagram span {
+  font-size: 0.9vw;
+}
+   
+  .pagebreak::after {
+        content: "";
+    }
+
+  body {
+    font-size: 0.8em;
+    padding: 0;
+    background: #fff;
+  }
+
+  .wrapper {
+    background: #fff;
+    /*margin: 0;*/
+    /* margin-top: 3mm;
+    */
+  }
+
+  .main-wrapper {
+    background: #fff;
+  }
+  .timeline li {
+    page-break-inside: avoid;
+  }
+
+  .skills-soft {
+    padding-top: 10px;
+    page-break-inside: avoid;
+  }
+  .skillset {
+    padding-top: 10px;
+    page-break-inside: avoid; 
+  }
+
+  .sidebar-wrapper .container-block {
+    /* padding: 30px; */
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+/*
+  section {
+    page-break-inside: avoid;
+  }
+*/
+  .sidebar-wrapper {
+    float: right; 
+
+    width: 200px;
+    height: 100%;
+    /*
+    
+    height: 290mm;
+    */
+    color: #fff !important;
+    margin-right: 5mm;
+  }
+
+  .education-container, .languages-container, .interests-container {
+    /*display: none;
+    */
+  }
+
+
+  a[href]:after {
+    content: "";
+  }
+}
+
+
+
+
